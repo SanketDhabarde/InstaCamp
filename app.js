@@ -13,7 +13,10 @@ var express     = require("express"),
 // seedDB();
 
 // connect mongoose to DB
-mongoose.connect("mongodb://localhost:27017/yelp_camp",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false});
+// mongoose.connect("mongodb://localhost:27017/yelp_camp",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false});
+// mongoose.connect("mongodb+srv://sanket:Sanket#658@cluster0.b2swu.mongodb.net/yelp_camp?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false});
+mongoose.connect("mongodb+srv://sank:sanket@cluster0.b2swu.mongodb.net/yelp_camp?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false});
+
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride("_method"));

@@ -20,3 +20,6 @@
     text-align: center;
     margin: 3rem auto;
 }
+#date{
+    float: right;
+}

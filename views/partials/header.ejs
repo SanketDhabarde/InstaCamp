@@ -6,6 +6,7 @@
     <title>InstaCamp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -18,10 +19,10 @@
           <ul class="navbar-nav mr-auto">
            <% if(currentUser){ %>
             <li class="nav-item"><a class="nav-link" href="#">signed in as <%= currentUser.username %></a></li>
-            <li class="nav-item"><a class="nav-link" href="/logout">logout</a></li>  
+            <li class="nav-item"><a class="nav-link" href="/logout">logout <i class="fas fa-sign-out-alt"></i></a></li>  
            <% } else { %>
-            <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-            <li class="nav-item"><a class="nav-link" href="/register">sign up</a></li>
+            <li class="nav-item"><a class="nav-link" href="/login">Login <i class="fas fa-sign-in-alt"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="/register">sign up <i class="fas fa-user-plus"></i></a></li>
            <% } %>
             
           </ul>
